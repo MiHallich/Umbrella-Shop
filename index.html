@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Umbrella shop</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <container class="page">
+        <div class="options">
+            <div class="select" style="margin-top: 100px;">
+                <select id="color_select">
+                    <option value="">Select color:</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Green">Green</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                    <option value="Pink">Pink</option>
+                </select>
+            </div>
+            <div class="select">
+                <select id="size_select">
+                    <option value="">Select size:</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </div>
+            <div class="priceSlider">
+                <h1>Price Range:</h1>
+                <p>Move Slider to choose the price range.</p>
+
+                <div class="min-max">
+                    <div class="min">
+                        <label>Min</label><span id="min-value"></span>
+                    </div>
+                    <div class="max">
+                        <label>Max</label><span id="max-value"></span>
+                    </div>
+                </div>
+
+                <div class="min-max-range">
+                    <input type="range" min="0" max="50" value="0" class="range" id="min">
+                    <input type="range" min="51" max="100" value="100" class="range" id="max">
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="top">
+                <input type="text" id="search">
+
+            </div>
+            <div class="products" id="destination">
+
+            </div>
+        </div>
+
+    </container>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
